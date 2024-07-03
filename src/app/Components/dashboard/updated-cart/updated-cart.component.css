@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    width: 200px;
+ 
+}
+.divul{
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+input{
+    width: 350px;
+}

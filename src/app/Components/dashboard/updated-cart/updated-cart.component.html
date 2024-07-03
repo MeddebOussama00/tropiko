@@ -1,0 +1,26 @@
+<ul class="p-3 mx-auto">
+  <form [formGroup]="myform" (submit)="onSubmit()">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <label>Cart</label>
+          <input formControlName="cart" id="cart" type="text" class="form-control" placeholder="Name">
+          <div class="alert alert-danger mt-2 w-100" *ngIf="message">{{message}}</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label>Price</label>
+          <input formControlName="price" type="number" class="form-control" placeholder="number">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary" >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</ul>

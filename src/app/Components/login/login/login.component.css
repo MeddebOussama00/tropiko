@@ -1,0 +1,16 @@
+
+
+form {
+    width: 400px; 
+    max-width: 100%; /* extend the width of the form */
+    padding: 20px; /* add some padding to the form */
+
+  }
+  
+  .form-control {
+    color: #333; /* make the text color more black */
+  }
+  
+  .form-label {
+    color: #333; /* make the label text color more black */
+  }

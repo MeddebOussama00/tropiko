@@ -1,0 +1,127 @@
+
+.header_section {
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #f7f7f7;
+}
+
+.header_section.nav_container {
+  margin: 0 auto;
+}
+
+
+
+
+
+.quote_btn-logout .btn{
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  width: 145px;
+  outline: none;
+  text-decoration: none;
+  color: #f7f7f7;
+  border: 1px solid transparent;
+  
+}
+
+.quote_btn-logout:hover .btn{
+  border: 1px solid #fc5d35;
+  color: #fc5d35;
+  background-color: transparent;
+}
+
+
+.offcanvas-body img {
+  width: 100px;
+  height: 50px;
+}
+  .nb{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    color: white;
+  }
+ .custom_orange-icon:hover .nb{
+  color:  #fc5d35;
+ }
+  .custom_nav-container.navbar-expand-lg.navbar-nav.nav-link {
+    padding: 10px 30px;
+    color: #343434;
+    text-align: center;
+  }
+  
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    color: initial;
+  }
+  
+  .btn,
+  .btn:focus {
+    outline: none!important;
+    box-shadow: none;
+  }
+  
+  .navbar-brand,
+  .navbar-brand:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fafcfd;
+  }
+  
+  .custom_nav-container.nav_search-btn {
+
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 45px;
+    margin-right: 5px;
+  }
+  
+  .navbar-brand span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2e2d;
+    margin-top: 5px;
+  }
+  
+  .custom_nav-container {
+    z-index: 99999;
+    padding: 15px 0;
+  }
+  
+  .custom_nav-container.navbar-toggler {
+    outline: none;
+  }
+  
+  .custom_nav-container.navbar-toggler.navbar-toggler-icon {
+    background-image: url(../../../../assets/images/menu.png);;
+    background-size: 55px;
+  }
+  
+  .quote_btn-container a ,  .quote_btn-container .btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #fc5d35;
+    color: #f7f7f7;
+    font-size: 14px;
+    text-transform: uppercase;
+  }

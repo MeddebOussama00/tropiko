@@ -1,0 +1,18 @@
+<form #form="ngForm" (submit)="addCart(form)">
+    <div class="form-outline mb-4">
+        <label class="form-label" for="cartInput">New Cart</label>
+        <input type="text" id="cartInput" required ngModel name="cart" #cart="ngModel" class="form-control" />
+        <div class="alert alert-danger" *ngIf="cart.touched && cart.errors?.['required']">New Cart required</div>
+        <div class="alert alert-danger mt-2 w-100" *ngIf="message">{{message}}</div>
+    </div>
+    <div class="form-outline mb-4">
+        <label class="form-label" for="priceInput">Price</label>
+        <input type="number" id="priceInput" required ngModel name="price" #price="ngModel" class="form-control" />
+        <div class="alert alert-danger" *ngIf="price.touched && price.errors?.['required']">price required</div>
+    </div>
+    <div class="form-outline mb-4">
+        <label class="form-label">Image</label>
+        <input type="file" accept="image/*"  required ngModel name="image" #image class="form-control" />
+    </div>
+    <button  type="submit" [disabled]="form.invalid" class="btn w-25 btn-primary btn-block mb-4">Add</button>
+</form>

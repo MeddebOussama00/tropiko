@@ -1,0 +1,36 @@
+<section class="fruit_section layout_padding-top">
+    <div class="container">
+      <h2 class="custom_heading text-center" >Fresh Fruits</h2>
+      <p class="custom_heading-text text-center">
+        There are many variations of passages of Lorem Ipsum available, but
+        the majority have
+      </p>
+      <div *ngFor="let d of g" class="row layout_padding2-top layout_padding-bottom">
+        <div class="col-md-8">
+          <div class="fruit_detail-box">
+            <h3>
+              Best Fresh {{d.name}}
+            </h3>
+            <p class="mt-4 mb-2">
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be
+
+            </p>
+            <p class="text-muted  mb-3 fs-5">Price {{FormatPrice(d.price)}}</p>
+            <div>
+              <button type="button" (click)="buy(d)" class="custom_dark-btn">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <div class="fruit_img-box d-flex justify-content-center align-items-center">
+            <img [src]="d.imageUrl" alt=""  />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

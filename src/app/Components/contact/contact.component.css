@@ -1,0 +1,32 @@
+.contact_section {
+    background-image: url("../../../assets/images/orange-dish.png");
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position: right center;
+  }
+
+
+.contact_section input {
+border: none;
+outline: none;
+border-bottom: .8px solid #252525;
+width: 90%;
+margin: 10px 0;
+}
+
+
+.contact_form-container {
+  padding: 15px 0 15px 0;
+
+}
+
+  .contact_form-container button {
+    border: none;
+    background-color: #fc5d35;
+    color: #fff;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  

@@ -1,0 +1,37 @@
+<section class="contact_section layout_padding">
+  <div class="container">
+    <h2 class="font-weight-bold">
+      Contact Us
+    </h2>
+    <div class="row">
+      <div class="col-md-8 mr-auto">
+        <form [formGroup]="contactForm" (ngSubmit)="contact()">
+          <div class="contact_form-container">
+            <div>
+              <div>
+                <input formControlName="name" type="text" class="form-control" placeholder="Name">
+              </div>
+              <div>
+                <input formControlName="phoneNumber" type="text" class="form-control" placeholder="Phone Number">
+              </div>
+              <div>
+                <input formControlName="email" type="email" class="form-control" placeholder="Email">
+              </div>
+
+              <div class="mt-5">
+                <input formControlName="message" type="text" class="form-control" placeholder="Message">
+              </div>
+              <div class="mt-5">
+                <button type="submit" class="btn btn-primary">
+                  Send
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

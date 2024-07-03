@@ -1,0 +1,30 @@
+
+<div class="container d-flex justify-content-center align-items-center">
+  <form #form="ngForm" (submit)="loginUser(form) ">
+      <div  class="form-outline mb-4">
+        <input type="email" id="form2Example1" required ngModel name="email" #email="ngModel" class="form-control" />
+        <label class="form-label" for="form2Example1">Email address</label>
+        <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['required']">Email required</div>
+        <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['emaik']">Invalid email address</div>
+      </div>
+      <div  class="form-outline mb-4">
+        <input type="password" id="form2Example2" required ngModel name="pass" #pass="ngModel" minlength="6" class="form-control" />
+        <label class="form-label" for="form2Example2">Password</label>
+        <div class="alert alert-danger" *ngIf="pass.touched && pass.errors?.['required']">Password required</div>
+        <div class="alert alert-danger" *ngIf="pass.touched && pass.errors?.['minlength']">Password should minmun 6 caractere</div>
+      </div>
+  
+        <div class="row mb-4">  
+          <div class="col">
+            <a  class="text-primary" routerLink="/ForgetPassword">Forgot password</a>
+          </div>
+        </div>
+        <button  type="submit" [disabled]="form.invalid" class="btn btn-primary btn-block mb-4">Sign in</button>
+        <div class="alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+        <div class="text-center">
+          <p>Not a member? <a class="text-primary"routerLink="/register">Register</a></p>
+        </div>
+    </form>
+  </div>
+
+
