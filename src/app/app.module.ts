@@ -30,7 +30,7 @@ import { UpdatedCartComponent } from './Components/dashboard/updated-cart/update
 import { AddCartComponent } from './Components/dashboard/add-cart/add-cart.component';
 import { FogetPasswordComponent } from './Components/foget-password/foget-password.component';
 import { ContactComponent } from './Components/contact/contact.component';
-import {environment} from '../environments/environment'
+import {environment} from '../environments/environment.development'
 @NgModule({
   declarations: [
     AppComponent,
